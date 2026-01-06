@@ -6,11 +6,7 @@ import json
 st.set_page_config(page_title="Poggy의 수학 클리닉", page_icon="🥬")
 
 # 1. 비밀번호(Webhook URL) 가져오기
-try:
-    WEBHOOK_URL = st.secrets["WEBHOOK_URL"]
-except:
-    st.error("설정(Secrets)에 WEBHOOK_URL이 없습니다! 배포 가이드 확인하세요.")
-    st.stop()
+WEBHOOK_URL = "https://bandalip.app.n8n.cloud/webhook/generate-math"
 
 # 2. 화면 꾸미기
 st.title("🥬 포기(Poggy)의 수학 클리닉")
